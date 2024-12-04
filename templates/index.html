@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprise 🎁</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    /* Add this CSS to your existing styles */
+.lyrics-container {
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    padding: 0 15px; /* Add some padding for better readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.lyrics {
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    overflow-wrap: break-word; /* Break long words to prevent overflow */
+    font-size: 1rem; /* Base font size */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+/* Responsive adjustments for lyrics */
+@media (max-width: 768px) {
+    .lyrics {
+        font-size: 0.9rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .lyrics {
+        font-size: 0.8rem; /* Even smaller font size for mobile phones */
+    }
+}
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #1C1F38; /* Dark background */
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Retro love letter styling */
+        .letter-container {
+            background: linear-gradient(145deg, #d6c6a4, #f5f0e1);
+            border: 2px solid #d2b48c; /* Light brown border */
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 90%;
+            max-width: 800px;
+            line-height: 1.6;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .letter-header {
+            font-size: 2.5rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: #8b4513; /* Brown color */
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .letter-content {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #4b2e1d; /* Darker brown for content */
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .letter-signature {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #8b4513; /* Signature color */
+        }
+
+        .letter-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .download-btn {
+            background-color: #1E90FF; /* Blue */
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #00BFFF; /* Light blue */
+            box-shadow: 0 0 10px 2px rgba(0, 191, 255, 0.5);
+        }
+
+        /* Music library image styling */
+        .audio-player img {
+            max-width: 100%;
+            width: 200px; /* Set a reasonable default size */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .audio-player img {
+                width: 150px; /* Smaller size for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .audio-player img {
+                width: 120px; /* Even smaller size for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-10">
+        <!-- Love Letter Section -->
+        <div id="love-letter" class="tab-content active">
+            <div class="letter-container">
+                <h1 class="letter-header">Hey My Dearest Maharani</h1>
+                <div class="letter-content">
+                    <p>There’s something enchanting about beginnings—the way they hold a whisper of promise, a glimpse of the extraordinary waiting to bloom.</p>
+                    <br>
+                    <p>First, let me say how sorry I am for making you wait for this moment. You deserve nothing less than someone who’s certain of your worth, someone who sees you as the miracle you are. And that’s why I’m here, pouring my heart out to you through these words. You’ve waited, you’ve trusted, and now it’s time for me to take the leap I’ve been dreaming of.</p>
+                    <br>
+                    <p>Maharani, you are breathtakingly beautiful—not just in the way you look, but in the way you makes me feel. Your laughter is like the melody of my favorite song, your presence as comforting as the warmest sunrise. I’ve watched you conquer your fears, face challenges head-on, and carry yourself with a strength that leaves me in awe. You may doubt yourself sometimes, but I don’t. I see the power and resilience in you—qualities that make you the most remarkable woman I’ve ever known.</p>
+                    <br>
+                    <p>I know I’m not the most romantic person; I’ve never been one for grand gestures or perfectly planned surprises. But today, I’m trying—not because I want to impress you, but because you inspire me to be better, to do better. You deserve to be loved in ways that make your heart soar, and though I may stumble, I promise to keep trying until I get it right.</p>
+                    <br>
+                    <p>This letter is more than words; it’s a promise. A promise to stand by you through every joy and every storm. A promise to remind you, every single day, of your brilliance and beauty. A promise to cherish you, not just for who you are, but for who you’re becoming. And most of all, it’s a promise to love you with everything I have, for as long as you’ll let me.</p>
+                    <br>
+                    <p>So here I am, unromantic, imperfect, but deeply and irrevocably in love with you.</p>
+                    <p>Now, please click on the surprise button.❤️</p>
+                </div>
+                <div class="letter-signature">
+                    With all my love, <br>
+                    Your Maharaj.
+                </div>
+                <button onclick="showTab('music-library')" class="download-btn">
+                    Suprise
+                </button>
+            </div>
+        </div>
+
+        <!-- Music Library Tab -->
+<div id="music-library" class="tab-content">
+    <h1 class="text-5xl font-extrabold text-center mb-8 text-blue-400 tracking-wide">❤️ Love Library</h1>
+    <ul class="space-y-8">
+        {% for song in songs %}
+        <li class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            {% if song in song_details %}
+            <div class="mb-6 bg-gray-700 p-4 rounded-lg">
+                <h2 class="text-center text-lg font-bold text-gray-300 mb-2">About This Song:</h2>
+                <p class="text-center text-base text-gray-200 font-medium">
+                    {{ song_details[song]["explanation"] }}
+                </p>
+            </div>
+            {% endif %}
+            <div class="text-center mb-4">
+                <div class="audio-player" onclick="togglePlay('{{ song }}')">
+                    <img src="{{ url_for('static', filename='uploads/' + song_details[song]['image']) }}" alt="Song Image">
+                </div>
+                <audio id="audio-{{ song }}" class="hidden">
+                    <source src="{{ url_for('play', filename=song) }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <input type="range" id="progress-{{ song }}" class="w-full mt-2" value="0" step="1" min="0" max="100" onchange="seekAudio('{{ song }}', this.value)">
+            </div>
+            <div class="text-center mt-4">
+                <a href="{{ url_for('download', filename=song) }}" class="download-btn">
+                    Download
+                </a>
+            </div>
+            {% if song in song_details %}
+            <div class="mt-6 bg-gray-700 p-4 rounded-lg lyrics-container">
+                <h2 class="text-center text-md font-bold text-gray-300 mb-2">Lyrics:</h2>
+                <pre class="lyrics text-center text-base text-gray-200 font-medium">{{ song_details[song]['lyrics'].replace('\n', '<br>')|safe }}</pre>
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+    <script>
+        function updateProgress(song) {
+    const audio = document.getElementById(`audio-${song}`);
+    const progress = document.getElementById(`progress-${song}`);
+    
+    if (audio) {
+        const percent = (audio.currentTime / audio.duration) * 100;
+        progress.value = isNaN(percent) ? 0 : percent;
+    }
+}
+
+function seekAudio(song, value) {
+    const audio = document.getElementById(`audio-${song}`);
+    if (audio) {
+        const duration = audio.duration;
+        audio.currentTime = (value / 100) * duration;
+    }
+}
+
+// Add event listener to update progress as the audio plays
+document.querySelectorAll('audio').forEach(audio => {
+    audio.addEventListener('timeupdate', function() {
+        const song = this.id.split('-')[1]; // Get song name from id
+        updateProgress(song);
+    });
+});
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                if (tab.id === tabName) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+        }
+    
+        function togglePlay(song) {
+            // Get the currently playing audio element
+            const currentlyPlaying = document.querySelector('audio:not(.hidden):not([id="audio-' + song + '"])');
+            
+            // Pause all other audio elements
+            if (currentlyPlaying) {
+                currentlyPlaying.pause();
+                currentlyPlaying.classList.add('hidden'); // Optionally hide it
+            }
+    
+            // Get the audio element for the selected song
+            const audio = document.getElementById(`audio-${song}`);
+            
+            // Play or pause the selected audio element
+            if (audio.paused) {
+                audio.classList.remove('hidden'); // Show the audio element if it's being played
+                audio.play();
+            } else {
+                audio.pause();
+                audio.classList.add('hidden'); // Hide it if it's paused
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        // Check if this is a reload
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            // Redirect to the root path `/`
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html>
